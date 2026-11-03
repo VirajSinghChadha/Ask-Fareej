@@ -1,0 +1,15 @@
+{
+  "name": "ask-fareej-management",
+  "version": "1.0.0",
+  "description": "Ask Fareej Management — multilingual, accessible community management website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "reset-data": "node -e \"import('node:fs').then(fs=>fs.rmSync('data/db.json',{force:true}))\" && echo Data reset. Start the server to re-seed.",
+    "check-i18n": "node scripts/check-i18n.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
